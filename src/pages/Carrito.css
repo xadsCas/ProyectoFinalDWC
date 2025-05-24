@@ -1,0 +1,133 @@
+/* Contenedor general con sombra */
+.carrito-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor de los productos */
+.carrito-items {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Tarjeta individual de producto */
+.carrito-card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  background-color: #f9f9f9;
+}
+
+/* Imagen con tamaño fijo y recortada */
+.carrito-img {
+  width: 140px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  flex-shrink: 0;
+}
+
+/* Info de producto: nombre, precio, cantidad */
+.carrito-info {
+  flex: 1;
+}
+
+.carrito-info h3 {
+  margin: 0 0 6px 0;
+  color: #333;
+}
+
+.carrito-info p {
+  margin: 0 0 12px 0;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Label para cantidad */
+.carrito-info label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Input para cantidad */
+.input-cantidad {
+  width: 60px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.input-cantidad:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
+}
+
+/* Contenedor de botones */
+.carrito-botones {
+  margin-top: 12px;
+}
+
+/* Botón eliminar */
+.carrito-botones button {
+  background-color: #ff4d4f;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.carrito-botones button:hover {
+  background-color: #d93638;
+}
+
+/* Contenedor del total y botón compra */
+.carrito-total {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 2px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carrito-total h3 {
+  font-size: 1.4rem;
+  color: #222;
+}
+
+/* Botón comprar */
+.btn-compra {
+  background-color: #4caf50;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(76,175,80,0.4);
+}
+
+.btn-compra:hover {
+  background-color: #388e3c;
+}

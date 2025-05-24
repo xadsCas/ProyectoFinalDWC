@@ -1,3 +1,7 @@
+body {
+  font-family: 'Roboto', sans-serif; /* o 'Open Sans' */
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +40,21 @@
     transform: rotate(360deg);
   }
 }
+/* Garantiza altura completa */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding-bottom: 60px; /* espacio para que no pise el footer */
+}
+
